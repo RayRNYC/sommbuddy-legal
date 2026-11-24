@@ -35,53 +35,61 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: August 2026 &nbsp;·&nbsp; DataGuy 5280 LLC</p>
+  <p class="meta">Effective date: November 2026 &nbsp;·&nbsp; DataGuy 5280 LLC</p>
 
   <h2>1. Information We Collect</h2>
   <p>SOMMBuddy collects the following information to operate the service:</p>
   <ul>
-    <li><strong>Account information</strong> — your name and email address when you create an account via email, Google, or Apple Sign In.</li>
-    <li><strong>Wine data</strong> — wine names, producers, vintages, your personal ratings, tasting notes, and label photos you choose to save to your cellar.</li>
-    <li><strong>Camera and photos</strong> — label images you capture or select are sent to our AI service for text extraction. Images are not stored on our servers beyond the duration of the request.</li>
-    <li><strong>Usage data</strong> — monthly scan and comparison counts used to enforce plan limits.</li>
-    <li><strong>Device information</strong> — platform type (iOS/Android) for feature compatibility purposes.</li>
-    <li><strong>Crash reports</strong> — anonymised error and crash information to help us identify and fix bugs.</li>
+    <li><strong>Account information</strong> — your name and email address when you create an account with email, Google, or Sign in with Apple. If you use email, your password is handled by Firebase Authentication and we do not store it. If you use Google, Google may also share your profile picture link. If you use Sign in with Apple and choose to hide your email, we receive an Apple relay address instead.</li>
+    <li><strong>Wine data</strong> — the wines you save to your cellar or wishlist, including names, producers, vintages, regions, grape varieties, tasting characteristics, your personal ratings, and your tasting notes.</li>
+    <li><strong>Label photos</strong> — when you scan a label, the photo is sent to our AI service to read the label. If you then save the wine, a compressed copy of the photo is stored with that wine in your account until you delete the wine or your account. If you cancel the scan without saving, we do not keep the photo.</li>
+    <li><strong>Taste profile</strong> — your taste profile is worked out on your device from the wines you save. When you use AI features such as sommelier descriptions and wine comparisons, details of the relevant wines, your ratings and a summary of your taste profile are sent to our AI service. Your tasting notes, name and email are not sent.</li>
+    <li><strong>Subscription information</strong> — your plan, the product you bought, its renewal and expiry dates, and which app store you bought it through.</li>
+    <li><strong>Usage data</strong> — the number of label scans you make each month, stored with your account to enforce plan limits. Comparison counts are kept on your device.</li>
+    <li><strong>Crash and performance data</strong> — when the app crashes or hits an error, and for a sample of app sessions, we receive technical details such as device model, operating system and app version, the error itself, and what the app was doing at the time. We do not attach your name or email to these reports.</li>
+    <li><strong>Settings on your device</strong> — your theme, display preferences, and whether you have allowed AI features are stored only on your device.</li>
   </ul>
 
   <h2>2. How We Use Your Information</h2>
   <ul>
-    <li>To provide and personalise the SOMMBuddy service, including AI-powered label scanning and sommelier descriptions.</li>
-    <li>To sync your cellar, ratings, and preferences across your devices.</li>
-    <li>To enforce plan limits and process subscription payments.</li>
+    <li>To provide and personalise the SOMMBuddy service, including AI-powered label scanning, sommelier descriptions, and recommendations.</li>
+    <li>To sync your cellar, wishlist, ratings, and label photos across your devices.</li>
+    <li>To enforce plan limits and confirm your subscription.</li>
     <li>To diagnose crashes, bugs, and service errors.</li>
     <li>To communicate important service changes to you.</li>
   </ul>
-  <p>We do not sell your personal data to third parties.</p>
+  <p>We do not sell your personal data, and we do not share it for advertising. SOMMBuddy shows no ads and contains no advertising or cross-app tracking tools.</p>
 
   <h2>3. Third-Party Services</h2>
   <p>We share data with the following services only as necessary to operate SOMMBuddy:</p>
   <ul>
-    <li><strong>Google Firebase</strong> — authentication, database (Firestore), and server-side Cloud Functions. Data is stored in Google Cloud infrastructure (US region). <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a></li>
-    <li><strong>Anthropic</strong> — wine label images and text queries are sent to Anthropic's API for AI processing. Anthropic does not use API data to train its models. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noreferrer">Anthropic Privacy Policy</a></li>
-    <li><strong>RevenueCat</strong> — subscription and in-app purchase management. RevenueCat receives your App Store / Google Play purchase receipt to verify subscriptions. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noreferrer">RevenueCat Privacy Policy</a></li>
-    <li><strong>Sentry</strong> — anonymised crash and error reporting to help us fix issues. <a href="https://sentry.io/privacy/" target="_blank" rel="noreferrer">Sentry Privacy Policy</a></li>
+    <li><strong>Google Firebase</strong> — sign-in (including Sign in with Google), our database (Firestore), and our server functions. Your account, cellar, label photos, subscription status, and scan counts are stored here, on Google Cloud servers in the United States. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a></li>
+    <li><strong>Apple</strong> — Sign in with Apple, and purchases made through the App Store. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noreferrer">Apple Privacy Policy</a></li>
+    <li><strong>Google Play</strong> — purchases made through Google Play on Android. <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a></li>
+    <li><strong>Anthropic</strong> — label photos and the wine details described in section 1 are sent to Anthropic's API, through our server, to read labels and write descriptions. We ask your permission in the app before sending anything to Anthropic, and AI features stay off if you decline. Under its commercial terms, Anthropic does not use this data to train its models. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noreferrer">Anthropic Privacy Policy</a></li>
+    <li><strong>RevenueCat</strong> — subscription and in-app purchase management. RevenueCat receives your SOMMBuddy account ID (a random ID, not your email) and your App Store or Google Play purchase information to verify your subscription. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noreferrer">RevenueCat Privacy Policy</a></li>
+    <li><strong>Sentry</strong> — crash, error, and performance reporting, as described in section 1. <a href="https://sentry.io/privacy/" target="_blank" rel="noreferrer">Sentry Privacy Policy</a></li>
+    <li><strong>Wine reference databases</strong> (Global Wine Score and Sample APIs) — used to look up wine details and critic scores. They receive only the wine name and vintage being looked up, never your account details.</li>
   </ul>
 
   <h2>4. Data Retention</h2>
-  <p>Your account data is retained while your account is active. When you delete your account, your data is flagged for deletion and permanently removed within 90 days.</p>
-  <p>You can delete your account at any time via <strong>Account → Delete Account</strong> in the app.</p>
+  <p>Your account data is retained while your account is active. When you delete a wine, it and its label photo are removed from your account.</p>
+  <p>When you delete your account, your sign-in account is removed immediately. Your cellar, wishlist, ratings, tasting notes, label photos, subscription status, and usage records are kept for 90 days and then permanently deleted. No one can sign in to that data during this time.</p>
+  <p>Services listed in section 3 keep the data they receive under their own retention policies. For example, RevenueCat keeps purchase records and Sentry keeps crash reports for a limited time.</p>
+  <p>Deleting your account does not cancel a subscription. Cancel it in your App Store or Google Play subscription settings.</p>
+  <p>You can delete your account at any time via <strong>Account → Danger zone → Delete account</strong> in the app, or by following the steps on our <a href="delete-account.html">account deletion page</a>.</p>
 
   <h2>5. Your Rights</h2>
-  <p>Depending on your location, you may have rights to access, correct, or delete the personal data we hold about you. To exercise these rights, contact us at <a href="mailto:DataGuy5280@gmail.com">DataGuy5280@gmail.com</a>. Account deletion can also be performed directly through the app.</p>
+  <p>Depending on your location, you may have rights to access, correct, or delete the personal data we hold about you. To exercise these rights, contact us at <a href="mailto:DataGuy5280@gmail.com">DataGuy5280@gmail.com</a>. You can also download a copy of your profile and cellar via <strong>Account → Data &amp; privacy → Export</strong>, and delete your account directly in the app.</p>
 
   <h2>6. Children</h2>
   <p>SOMMBuddy is a wine-related app intended for adults of legal drinking age in their jurisdiction. We do not knowingly collect personal data from anyone under 18 years of age.</p>
 
   <h2>7. Security</h2>
-  <p>We use industry-standard security measures including Firebase Authentication, HTTPS encryption in transit, and Firestore security rules that restrict data access to the account owner. No method of transmission or storage is 100% secure; we cannot guarantee absolute security.</p>
+  <p>We use industry-standard security measures including Firebase Authentication, HTTPS encryption in transit, and Firestore security rules that restrict data access to the account owner. Your subscription status and scan counts can only be changed by our server. No method of transmission or storage is 100% secure; we cannot guarantee absolute security.</p>
 
   <h2>8. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via the app or email. Your continued use of SOMMBuddy after changes are posted constitutes your acceptance of the updated policy.</p>
+  <p>We may update this Privacy Policy from time to time. We will post the updated policy here and change the effective date, and we will notify you of significant changes via the app or email. Your continued use of SOMMBuddy after changes are posted constitutes your acceptance of the updated policy.</p>
 
   <h2>9. Contact</h2>
   <p>Questions or concerns about this Privacy Policy? Contact us at <a href="mailto:DataGuy5280@gmail.com">DataGuy5280@gmail.com</a>.</p>
